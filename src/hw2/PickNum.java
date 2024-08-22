@@ -16,7 +16,7 @@ public class PickNum {
 			}
 		}
 		System.out.println();
-		System.out.println("Total count of numbers without 4: " + count);
+		System.out.println("不包含4的數字共有 " + count + " 個");
 	}
 
 	public static boolean containsFour(int number) {
