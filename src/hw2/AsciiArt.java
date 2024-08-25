@@ -4,7 +4,7 @@ public class AsciiArt {
 
 	public static void main(String[] args) {
 
-//請設計一隻Java程式,輸出結果為以下:
+//請設計一隻Java程式，輸出結果為以下：
 // 1 2 3 4 5 6 7 8 9 10
 // 1 2 3 4 5 6 7 8 9
 // 1 2 3 4 5 6 7 8
@@ -26,7 +26,7 @@ public class AsciiArt {
 
 		System.out.println();
 
-//請設計一隻Java程式,輸出結果為以下:
+//請設計一隻Java程式，輸出結果為以下：
 //A
 //BB
 //CCC
