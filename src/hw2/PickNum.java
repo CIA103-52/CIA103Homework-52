@@ -10,7 +10,8 @@ public class PickNum {
 		int count = 0;
 
 		for (int i = 1; i <= 49; i++) {
-			if (!containsFour(i)) {
+			if (i % 10 == 4 || i / 10 == 4) {
+			} else {
 				System.out.print(i + " ");
 				count++;
 			}
@@ -18,10 +19,4 @@ public class PickNum {
 		System.out.println();
 		System.out.println("不包含4的數字共有 " + count + " 個");
 	}
-
-	public static boolean containsFour(int number) {
-		String numStr = Integer.toString(number);
-		return numStr.contains("4");
-	}
-
 }
