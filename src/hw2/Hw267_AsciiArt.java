@@ -1,6 +1,6 @@
 package hw2;
 
-public class AsciiArt {
+public class Hw267_AsciiArt {
 
 	public static void main(String[] args) {
 
@@ -14,11 +14,9 @@ public class AsciiArt {
 // 1 2 3
 // 1 2
 // 1
-		
-		int i;
-		int j;
-		for (i = 1; i <= 10; i++) {
-			for (j = 1; j <= 11 - i; j++) {
+
+		for (int i = 1; i <= 10; i++) {
+			for (int j = 1; j <= 11 - i; j++) {
 				System.out.print(j + " ");
 			}
 			System.out.println();
@@ -34,11 +32,9 @@ public class AsciiArt {
 //EEEEE
 //FFFFFF
 
-		int x;
-		int y;
-		for (x = 0; x <= 5; x++) {
-			for (y = 0; y <= x; y++) {
-				char letter = (char) ('A' + x);
+		for (int i = 0; i <= 5; i++) {
+			for (int j = 0; j <= i; j++) {
+				char letter = (char) ('A' + i);
 				System.out.print(letter);
 			}
 			System.out.println();

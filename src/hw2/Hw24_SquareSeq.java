@@ -2,7 +2,7 @@ package hw2;
 
 //請設計一隻Java程式，輸出結果為： 1 4 9 16 25 36 49 64 81 100
 
-public class SquareSeq {
+public class Hw24_SquareSeq {
 
 	public static void main(String[] args) {
 
