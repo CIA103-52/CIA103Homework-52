@@ -1,7 +1,7 @@
 package hw3;
 
-//請設計一隻程式，使用者輸入三個數字後，
-//輸出結果會為正三角形、等腰三角形、直角三角形、其它三角形或不是三角形。
+// • 請設計一隻程式，使用者輸入三個數字後，
+//   輸出結果會為正三角形、等腰三角形、直角三角形、其它三角形或不是三角形。
 
 import java.util.Scanner;
 
@@ -30,7 +30,7 @@ public class Hw31_TriangleCheck {
 		sc.close();
 	}
 
-//進階功能：加入直角三角形的判斷。
+// 進階功能：加入直角三角形的判斷。
 
 	public static boolean pyththm(double a, double b, double c) {
 		double asquared = Math.pow(a, 2);
