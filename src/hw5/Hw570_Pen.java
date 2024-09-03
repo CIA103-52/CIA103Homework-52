@@ -6,16 +6,16 @@ package hw5;
 //   (3) 定義Getter/Setter方法
 //   (4) 宣告一個抽象方法write()
 
-public abstract class Hw57_Pen {
+public abstract class Hw570_Pen {
 
 	private String brand;
 	private double price;
 
-	public Hw57_Pen() { // 保留無參數建構子
+	public Hw570_Pen() { // 保留無參數建構子
 		// super(); 通常省略
 	}
 
-	public Hw57_Pen(String brand, double price) {
+	public Hw570_Pen(String brand, double price) {
 		this.brand = brand;
 		this.price = price;
 	}
