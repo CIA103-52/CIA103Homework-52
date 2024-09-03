@@ -18,7 +18,7 @@ public class Hw612_CalTest {
 			System.out.print("請輸入y的值：");
 			int y = scn.nextInt();
 
-			Hw61_Calculator cal = new Hw61_Calculator(x, y);
+			Hw610_Calculator cal = new Hw610_Calculator(x, y);
 			int result = cal.getPowerXY();
 
 			System.out.println(x + " 的 " + y + " 次方 = " + result);

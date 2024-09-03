@@ -11,22 +11,22 @@ package hw6;
 
 import java.util.InputMismatchException;
 
-public class Hw61_Calculator {
+public class Hw610_Calculator {
 
 	private int x;
 	private int y;
 
-	public Hw61_Calculator() {
+	public Hw610_Calculator() {
 	}
 
-	public Hw61_Calculator(int x, int y) throws Hw611_CalException {
+	public Hw610_Calculator(int x, int y) throws Hw611_CalException {
 
-		if (x >= 0 && y >= 0) {
+		if (x == 0 && y == 0) {
+			throw new Hw611_CalException("0的0次方沒有意義！");
+
+		} else if (x >= 0 || y >= 0) {
 			this.x = x;
 			this.y = y;
-
-		} else if (x == 0 && y == 0) {
-			throw new Hw611_CalException("0的0次方沒有意義！");
 
 		} else if (y < 0) {
 			throw new IllegalArgumentException("次方為負值，結果回傳不為整數！");
