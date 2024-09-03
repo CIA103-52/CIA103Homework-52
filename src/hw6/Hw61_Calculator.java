@@ -21,7 +21,7 @@ public class Hw61_Calculator {
 
 	public Hw61_Calculator(int x, int y) throws Hw611_CalException {
 
-		if (x > 0 && y >= 0) {
+		if (x >= 0 && y >= 0) {
 			this.x = x;
 			this.y = y;
 
