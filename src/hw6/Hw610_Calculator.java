@@ -27,7 +27,7 @@ public class Hw610_Calculator {
 		} else if (y < 0) {
 			throw new IllegalArgumentException("次方為負值，結果回傳不為整數！");
 
-		} else if (x >= 0 || y >= 0) {
+		} else if (y >= 0) {
 			this.x = x;
 			this.y = y;
 
