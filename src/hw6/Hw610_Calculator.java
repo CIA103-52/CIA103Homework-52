@@ -24,12 +24,12 @@ public class Hw610_Calculator {
 		if (x == 0 && y == 0) {
 			throw new Hw611_CalException("0的0次方沒有意義！");
 
+		} else if (y < 0) {
+			throw new IllegalArgumentException("次方為負值，結果回傳不為整數！");
+
 		} else if (x >= 0 || y >= 0) {
 			this.x = x;
 			this.y = y;
-
-		} else if (y < 0) {
-			throw new IllegalArgumentException("次方為負值，結果回傳不為整數！");
 
 		} else
 			throw new InputMismatchException("輸入格式不正確");
