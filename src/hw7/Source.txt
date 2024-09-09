@@ -1,0 +1,5 @@
+Hello users,
+
+copyFile() is a basic Java method to copy file by path,
+
+Let's try it :)
