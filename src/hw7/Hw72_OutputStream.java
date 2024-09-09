@@ -8,24 +8,29 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Hw72_OutputStream {
 
 	public static void main(String[] args) throws IOException {
-		
+
 		File outputFile = new File(".\\src\\hw7\\Data.txt");
 		FileWriter wrt = new FileWriter(outputFile, true);
 		BufferedWriter bwrt = new BufferedWriter(wrt);
 
 		Random rand = new Random();
 
-		Integer[] r10 = new Integer[10];
-		for (int i = 0; i < r10.length; i++) {
-			r10[i] = (int) (Math.random() * 1000 + 1);
-			bwrt.write(r10[i].toString());
-			bwrt.newLine();
+		List<Integer> list = new ArrayList<>(10);
+		for (int i = 0; i < 10; i++) {
+			int randnum = (int) (Math.random() * 1000 + 1);
+			list.add(randnum);
 		}
+		bwrt.write(list.toString());
+		bwrt.newLine();
+		bwrt.newLine();
+
 		bwrt.close();
 		wrt.close();
 

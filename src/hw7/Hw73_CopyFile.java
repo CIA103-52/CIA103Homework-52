@@ -38,9 +38,8 @@ public class Hw73_CopyFile {
 
 	}
 
-//	public static void main(String[] args) throws IOException {
-//
-//		copyFile(".\\src\\hw7\\Source.txt", ".\\src\\hw7\\Target.txt");
-//	}
-	
+	public static void main(String[] args) throws IOException {
+
+		copyFile(".\\src\\hw7\\Source.txt", ".\\src\\hw7\\Target.txt");
+	}
 }
