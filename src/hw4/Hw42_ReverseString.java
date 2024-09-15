@@ -11,7 +11,7 @@ public class Hw42_ReverseString {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("請輸入字串_");
+		System.out.println("請輸入字串");
 		String input = sc.nextLine();
 
 		// 方法1
