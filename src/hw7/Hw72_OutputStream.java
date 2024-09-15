@@ -10,7 +10,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class Hw72_OutputStream {
 
@@ -19,8 +18,6 @@ public class Hw72_OutputStream {
 		File outputFile = new File(".\\src\\hw7\\Data.txt");
 		FileWriter wrt = new FileWriter(outputFile, true);
 		BufferedWriter bwrt = new BufferedWriter(wrt);
-
-		Random rand = new Random();
 
 		List<Integer> list = new ArrayList<>(10);
 		for (int i = 0; i < 10; i++) {
