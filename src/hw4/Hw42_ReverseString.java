@@ -11,13 +11,24 @@ public class Hw42_ReverseString {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("請輸入字串");
+		System.out.println("請輸入字串_");
 		String input = sc.nextLine();
 
+		// 方法1
 		char[] strArray = input.toCharArray();
 		for (int i = strArray.length - 1; i >= 0; i--) {
 			System.out.print(strArray[i]);
 		}
+		System.out.println();
+		
+		// 方法2寫法1
+		StringBuffer stringBuffer = new StringBuffer(input);
+		System.out.print(stringBuffer.reverse());
+		System.out.println();
+		
+		// 方法2寫法2
+		System.out.println(new StringBuffer(input).reverse());
+		
 		sc.close();
 	}
 }
